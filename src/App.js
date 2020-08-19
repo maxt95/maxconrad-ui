@@ -1,11 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import React from 'react'
+import logo from './logo.svg'
+import './App.scss'
+import Header from './components/header'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,9 +19,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </Header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
