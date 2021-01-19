@@ -8,9 +8,35 @@
     width: 100%;
     background-color: #3a70a2;
     color: white;
+    display: grid;
+    grid-template-rows: 10% 30% auto 10%;
+    grid-template-areas:
+      "padding-top" 
+      "avatar" 
+      "description" 
+      "padding-bottom";
+
+    .avatar {
+      grid-area: avatar;
+      margin-left: 25%;
+      margin-right: 25%;
+      background-color: black;
+    }
+
+    .description {
+      grid-area: description;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 30px;
+      background-color: black;
+    }
   }
   .link-section {
     width: 100%;
-    background-color:#2e7cc4;
+    background-color: #435c77;
+    display: grid;
+    grid-template-rows: 20% auto 20%;
+    grid-template-columns: 10% auto 10%;
+
   }
 }
