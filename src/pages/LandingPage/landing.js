@@ -9,7 +9,7 @@ const renderLinks = () => {
       url: 'https://linkedin.com',
     },
     {
-      name: 'GitHub',
+      name: 'Github',
       url: 'https://github.com/maxt95'
     },
     {
@@ -26,7 +26,7 @@ const renderLinks = () => {
     <>
       {linkData.map((link) => {
         return (
-          <div className="link">
+          <div className="link" key={link.name}>
             <h2>{link.name}</h2>
           </div>
       )})}
