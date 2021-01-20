@@ -1,8 +1,8 @@
 .landing-page {
   display: grid;
   grid-template-columns: 40% 60%;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   
   .about-section {
     width: 100%;
@@ -20,7 +20,11 @@
       grid-area: avatar;
       margin-left: 25%;
       margin-right: 25%;
-      background-color: black;
+      width: 50%;
+      img { 
+        height: 100%;
+        width: 70%;
+      }
     }
 
     .description {
@@ -28,15 +32,39 @@
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 30px;
-      background-color: black;
     }
   }
   .link-section {
     width: 100%;
     background-color: #435c77;
     display: grid;
-    grid-template-rows: 20% auto 20%;
+    grid-template-rows: 10% auto 20%;
     grid-template-columns: 10% auto 10%;
 
+    .left-padding {
+      grid-column-start: 1;
+      grid-column-end: span 1;
+      grid-row-start: 1;
+      grid-row-end: span 3;
+      background-color: #3a70a2;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+      grid-gap: 1rem;
+      width: 100%;
+      height: 100%;
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      grid-row-start: 2;
+      grid-row-end: span 1;
+      background-color: black;
+
+      .link {
+        background-color: red;
+        margin: 1.5rem;
+        border-radius: 10%;
+      }
+    }
   }
 }
