@@ -2,6 +2,37 @@ import React from 'react'
 import './landing.scss'
 import avatar from '../../images/avatar.jpg'
 
+const renderLinks = () => {
+  const linkData = [
+    {
+      name: 'LinkedIn',
+      url: 'https://linkedin.com',
+    },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/maxt95'
+    },
+    {
+      name: 'Resume',
+      url: 'tbd'
+    },
+    {
+      name: 'Portfolio',
+      url: 'tbd'
+    }
+  ]
+
+  return(
+    <>
+      {linkData.map((link) => {
+        return (
+          <div className="link">
+            <h2>{link.name}</h2>
+          </div>
+      )})}
+    </>
+  )
+}
 const Landing = () => {
   return (
     <div className="landing-page">
@@ -17,10 +48,7 @@ const Landing = () => {
       <div className="link-section">
         <div className="left-padding" />
         <div className="links">
-          <div className="link"></div>
-          <div className="link"></div>
-          <div className="link"></div>
-          <div className="link"></div>
+          {renderLinks()}
         </div>
       </div>
     </div>
