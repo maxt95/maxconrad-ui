@@ -6,7 +6,7 @@ const renderLinks = () => {
   const linkData = [
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'https://linkedin.com/in/maxconrad1',
     },
     {
       name: 'Github',
