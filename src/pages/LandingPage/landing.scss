@@ -50,7 +50,7 @@
     }
     .links {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(35%, 1fr));
       grid-gap: 1rem;
       width: 100%;
       height: 100%;
@@ -64,6 +64,12 @@
         background-color: rgb(206, 206, 206);
         margin: 1.5rem;
         border-radius: 10%;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        h2 {
+          margin: auto;
+        }
       }
     }
   }
